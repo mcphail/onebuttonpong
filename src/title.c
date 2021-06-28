@@ -1,7 +1,7 @@
 #include <SDL.h>
 #include <SDL_image.h>
 #include <stdio.h>
-#include <sounds.h>
+#include "sounds.h"
 
 #include "../res/pixmaps/title.xpm"
 
