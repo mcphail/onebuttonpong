@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=One Button Pong
+Exec=onebuttonpong
+Comment=Press SPACE to stop bat falling
+Type=Application
+Icon=${SNAP}/usr/share/pong/icon.png
+StartupNotify=true
+Categories=Game;
