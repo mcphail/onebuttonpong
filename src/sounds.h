@@ -5,6 +5,6 @@ int loadSounds(void);
 int playBeep(void);
 int playBing(void);
 int playMusic(void);
-int stopMusic(void);
+void stopMusic(void);
 
 #endif
