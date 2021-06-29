@@ -1,4 +1,5 @@
 #include <SDL.h>
+#include <stdlib.h>
 
 #include "enemy.h"
 #include "game.h"
@@ -19,6 +20,16 @@ int moveEnemy(const SDL_Rect *bat, const SDL_Rect *ball, float ballRad)
 			return 1;
 		} else {
 			return 1;
+		}
+	}
+
+	/* Move randomly when ball is far, to reduce difficulty */
+	if (ball->x < bat->x * 0.6) {
+		if (rand() > RAND_MAX / 2) {
+			return 1;
+		}
+		else {
+			return -1;
 		}
 	}
 
